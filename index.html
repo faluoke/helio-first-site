@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      body {
+        background: lightblue;
+      }
+      .reg-form {
+        font-size: 2em;
+        margin: 0 auto;
+        width: 500px;
+      }
+      .reg-form .form-head {
+        text-align: center;
+        color: rgb(245, 91, 117);
+      }
+
+      .reg-form .form-label {
+        color:rgb(83, 81, 81)
+      }
+
+      .reg-form .form-input {
+        border-color: lightblue;
+        border-style: none;
+        border-radius: 3px;
+        margin: 1em;
+        padding: 1em;
+      }
+
+      .reg-form .form-button {
+        border-style: none;
+        background: lightskyblue;
+        padding: 1.5em 9em;
+        margin-top: 40px;
+      }
+      div {
+        text-align: center;
+      }
+    
+    </style>
+  </head>
+  <body>
+      <form class="reg-form">
+      <h1 class="form-head">Registration</h1>
+      <label class="form-label" for="fname">First Name</label>
+      <input class="form-input" type="text" id="fname" placeholder="First Name" required><br>
+      <label class="form-label" for="lname">Last Name</label>
+      <input class="form-input" type="text" id="lname" placeholder="Last Name" required><br>
+      <label class="form-label" for="age">Age</label>
+      <input class="form-input" type="number" id="age" min="13" placeholder="13 or above" required><br>
+      <label class="form-label" for="phone">Phone</label>
+      <input class="form-input" type="tel" id="phone" placeholder="Phone" required><br>
+      <label class="form-label" for="email">Email</label>
+      <input class="form-input" type="email" placeholder="example@email.com" required><br>
+      <label class="form-label" for="password">Password</label>
+      <input class="form-input" type="password" id="password" minlength="8" placeholder="Password" required><br>
+      <label class="form-label" for="rpassword">Repeat Password</label>
+      <input class="form-input" type="password" id="rpassword" minlength="8" placeholder="Repeat Password" required><br>
+      <div>
+      <button class="form-button">Create</button>
+    </div>
+    </form>
+  </body>
+</html>
